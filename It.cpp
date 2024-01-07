@@ -1,6 +1,6 @@
 __int64 __fastcall CustomPsGetProcessPeb(PEPROCESS Process)
 {
-  // _PEB* Peb = EProcess->Peb; //0x550 (Windows 11 | 23H2)
+  	// _PEB* Peb = EProcess->Peb; //0x550 (Windows 11 | 23H2)
 	return *(_QWORD*)((__int64)Process + 0x550);
 }
 
